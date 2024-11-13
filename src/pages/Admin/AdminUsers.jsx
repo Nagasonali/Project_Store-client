@@ -3,8 +3,6 @@ import AdminPageHeader from '../../components/Admin/AdminPageHeader'
 import { Loader2, Pencil, Trash, TriangleAlert } from 'lucide-react'
 import { getUsers } from '../../api/api'
 
-
-
 const AdminUsers = () => {
   const [users, setUsers] = useState(null)
   const [loading, setLoading] = useState(true)
@@ -50,10 +48,12 @@ const AdminUsers = () => {
     )
   }
   return (
-    <div className='w-full h-full flex flex-col justify-start items-start'>
-      <AdminPageHeader title='Users' />
+    <div className='w-full flex flex-col justify-start items-start'>
+      <div className='w-full flex flex-row justify-between items-center my-4 shadow-md rounded-md p-1 border'>
+        <AdminPageHeader title='Users' />
+      </div>
       <table className='w-full h-full border-collapse border shadow-lg rounded-md'>
-        <thead className='shadow-sm font-bold text-purple-500 text-left'>
+        <thead className='shadow-md font-bold text-purple-500 text-left rounded-md'>
           <tr>
             <th className='p-6'>Name</th>
             <th className='p-6'>Email</th>

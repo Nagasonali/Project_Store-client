@@ -39,7 +39,7 @@ const AdminLeftBar = () => {
           }
         </div>
         <div className='h-[10%] w-full flex items-end'>
-          <div className=' px-8 bg-red-500 w-full h-2/3 text-white flex justify-start font-bold items-center'>
+          <div className=' px-8 bg-purple-500 w-full h-2/3 text-white flex justify-start font-bold items-center'>
             Logout
           </div>
         </div>
